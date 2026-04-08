@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your table at The Hearthstone Café & Bistro. Make a reservation online or call us for special arrangements.">
+    <title>Reservations | The Hearthstone Café & Bistro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">❖</span>
+                    <span class="logo-text">The Hearthstone</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="reservations.html" class="nav-link active">Reservations</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header page-header-reservations">
+            <div class="page-header-overlay"></div>
+            <div class="container">
+                <span class="page-tag">Book Your Table</span>
+                <h1>Reservations</h1>
+                <p>Secure your spot for a memorable dining experience</p>
+            </div>
+        </section>
+
+        <!-- Reservation Info -->
+        <section class="reservation-info">
+            <div class="container">
+                <div class="info-cards">
+                    <div class="info-card">
+                        <span class="info-icon">🕐</span>
+                        <h3>Reservation Hours</h3>
+                        <p>Reservations accepted 7:00 AM – 9:00 PM daily</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">👥</span>
+                        <h3>Party Size</h3>
+                        <p>Up to 8 guests online. Call for larger parties.</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">📱</span>
+                        <h3>Confirmation</h3>
+                        <p>Instant confirmation via email and SMS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Form Section -->
+        <section class="reservation-section">
+            <div class="container">
+                <div class="reservation-grid">
+                    <div class="reservation-form-wrapper">
+                        <div class="form-header">
+                            <span class="section-tag">Online Booking</span>
+                            <h2>Make a Reservation</h2>
+                            <p>Complete the form below to book your table. We'll send a confirmation immediately.</p>
+                        </div>
+                        <form class="reservation-form" id="reservationForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="res-date">Date *</label>
+                                    <input type="date" id="res-date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="res-time">Time *</label>
+                                    <select id="res-time" name="time" required>
+                                        <option value="">Select a time</option>
+                                        <option value="07:00">7:00 AM</option>
+                                        <option value="07:30">7:30 AM</option>
+                                        <option value="08:00">8:00 AM</option>
+                                        <option value="08:30">8:30 AM</option>
+                                        <option value="09:00">9:00 AM</option>
+                                        <option value="09:30">9:30 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="10:30">10:30 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="13:30">1:30 PM</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="res-guests">Number of Guests *</label>
+                                    <select id="res-guests" name="guests" required>
+                                        <option value="">Select guests</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                        <option value="7">7 Guests</option>
+                                        <option value="8">8 Guests</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="res-seating">Seating Preference</label>
+                                    <select id="res-seating" name="seating">
+                                        <option value="no-preference">No Preference</option>
+                                        <option value="indoor">Indoor</option>
+                                        <option value="outdoor">Outdoor Patio</option>
+                                        <option value="bar">Bar Area</option>
+                                        <option value="quiet">Quiet Corner</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="res-name">Full Name *</label>
+                                    <input type="text" id="res-name" name="name" placeholder="John Smith" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="res-phone">Phone Number *</label>
+                                    <input type="tel" id="res-phone" name="phone" placeholder="(555) 123-4567" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="res-email">Email Address *</label>
+                                <input type="email" id="res-email" name="email" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="res-occasion">Special Occasion</label>
+                                <select id="res-occasion" name="occasion">
+                                    <option value="">None</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="res-requests">Special Requests</label>
+                                <textarea id="res-requests" name="requests" rows="3" placeholder="Dietary restrictions, accessibility needs, or any other requests..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    <span>Subscribe to our newsletter for updates and special offers</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">Confirm Reservation</button>
+                        </form>
+
+                        <!-- Success Message (Hidden by default) -->
+                        <div class="form-success" id="formSuccess" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h3>Reservation Confirmed!</h3>
+                            <p>Thank you for choosing The Hearthstone. We've sent a confirmation to your email and phone.</p>
+                            <div class="reservation-details" id="reservationDetails"></div>
+                            <a href="index.html" class="btn btn-secondary">Return to Home</a>
+                        </div>
+                    </div>
+
+                    <div class="reservation-sidebar">
+                        <div class="sidebar-card">
+                            <h3>📞 Call to Reserve</h3>
+                            <p>For parties larger than 8, same-day reservations, or special arrangements:</p>
+                            <a href="tel:5551234567" class="phone-link">(555) 123-4567</a>
+                            <p class="hours-note">Available 9:00 AM – 9:00 PM daily</p>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3>📋 Private Events</h3>
+                            <p>Planning a celebration or corporate event? We offer private dining options.</p>
+                            <a href="contact.html" class="link-arrow">Inquire about private events →</a>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3>ℹ️ Cancellation Policy</h3>
+                            <p>We understand plans change. Please give us at least 24 hours notice for cancellations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">❖</span>
+                    <span class="logo-text">The Hearthstone</span>
+                    <p>Where Moments Are Made</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>123 Main Street<br>Downtown District<br>(555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Hearthstone Café & Bistro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

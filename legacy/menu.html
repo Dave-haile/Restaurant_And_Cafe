@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our handcrafted menu at The Hearthstone Café & Bistro. From breakfast favorites to dinner entrees, coffee to cocktails.">
+    <title>Menu | The Hearthstone Café & Bistro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">❖</span>
+                    <span class="logo-text">The Hearthstone</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="reservations.html" class="nav-link">Reservations</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-overlay"></div>
+            <div class="container">
+                <span class="page-tag">Our Offerings</span>
+                <h1>Our Menu</h1>
+                <p>Fresh, locally sourced ingredients crafted with care</p>
+            </div>
+        </section>
+
+        <!-- Menu Navigation -->
+        <div class="menu-nav-wrapper">
+            <div class="container">
+                <nav class="menu-nav">
+                    <a href="#breakfast" class="menu-nav-link">Breakfast</a>
+                    <a href="#appetizers" class="menu-nav-link">Appetizers</a>
+                    <a href="#salads" class="menu-nav-link">Salads</a>
+                    <a href="#mains" class="menu-nav-link">Mains</a>
+                    <a href="#desserts" class="menu-nav-link">Desserts</a>
+                    <a href="#drinks" class="menu-nav-link">Drinks</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <div class="container">
+                <div class="filter-options">
+                    <span class="filter-label">Dietary Filters:</span>
+                    <button class="filter-btn" data-filter="vegetarian">
+                        <span class="filter-indicator vegetarian">🌿</span> Vegetarian
+                    </button>
+                    <button class="filter-btn" data-filter="vegan">
+                        <span class="filter-indicator vegan">🌱</span> Vegan
+                    </button>
+                    <button class="filter-btn" data-filter="gluten-free">
+                        <span class="filter-indicator gluten-free">✓</span> Gluten-Free
+                    </button>
+                    <button class="filter-btn clear-filters" style="display: none;">Clear Filters</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breakfast Section -->
+        <section id="breakfast" class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Morning Favorites</span>
+                    <h2 class="section-title">Breakfast</h2>
+                    <p class="section-subtitle">Served until 11:00 AM</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item" data-tags="vegetarian">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #e8d5b5 0%, #d4a574 100%);">
+                                <span>🥑</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Sunrise Avocado Toast</h3>
+                                <span class="price">$12.95</span>
+                            </div>
+                            <p class="menu-item-description">Toasted sourdough, mashed avocado, chili flakes, feta cheese, poached egg</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">🌿 Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="vegetarian">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #f5deb3 0%, #daa520 100%);">
+                                <span>🥞</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Buttermilk Pancakes</h3>
+                                <span class="price">$11.50</span>
+                            </div>
+                            <p class="menu-item-description">Fluffy pancakes with maple syrup, fresh berries, and whipped butter</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">🌿 Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #daa520 0%, #b8860b 100%);">
+                                <span>🍳</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Hearty Breakfast Bowl</h3>
+                                <span class="price">$14.95</span>
+                            </div>
+                            <p class="menu-item-description">Scrambled eggs, roasted potatoes, bacon, avocado, and cheddar cheese</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="vegetarian gluten-free">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #e6c5c5 0%, #c58b8b 100%);">
+                                <span>🍓</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Açaí Bowl</h3>
+                                <span class="price">$10.50</span>
+                            </div>
+                            <p class="menu-item-description">Blended açaí, granola, banana, coconut flakes, and fresh berries</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">🌿 Vegetarian</span>
+                                <span class="tag gluten-free">✓ GF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appetizers Section -->
+        <section id="appetizers" class="menu-section menu-section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Starters</span>
+                    <h2 class="section-title">Appetizers</h2>
+                    <p class="section-subtitle">Perfect for sharing</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item" data-tags="vegan">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #f4d03f 0%, #d4ac0d 100%);">
+                                <span>🥙</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Spiced Hummus with Pita</h3>
+                                <span class="price">$8.50</span>
+                            </div>
+                            <p class="menu-item-description">Creamy hummus infused with exotic spices served with warm pita bread</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegan">🌱 Vegan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #c9846e 0%, #a65d3f 100%);">
+                                <span>🍤</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Crispy Calamari</h3>
+                                <span class="price">$12.00</span>
+                            </div>
+                            <p class="menu-item-description">Lightly fried calamari with lemon aioli and marinara sauce</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="vegetarian">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #90ee90 0%, #6b8e23 100%);">
+                                <span>🧀</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Buratta & Heirloom Tomatoes</h3>
+                                <span class="price">$14.00</span>
+                            </div>
+                            <p class="menu-item-description">Fresh burrata with heirloom tomatoes, basil pesto, and balsamic glaze</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">🌿 Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Salads Section -->
+        <section id="salads" class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Fresh & Healthy</span>
+                    <h2 class="section-title">Salads</h2>
+                    <p class="section-subtitle">Add grilled chicken or salmon for $5</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item" data-tags="vegetarian gluten-free">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #98fb98 0%, #7cfc00 100%);">
+                                <span>🥗</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Mediterranean Quinoa Salad</h3>
+                                <span class="price">$10.75</span>
+                            </div>
+                            <p class="menu-item-description">Quinoa, cucumber, tomato, Kalamata olives, feta, lemon vinaigrette</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">🌿 Vegetarian</span>
+                                <span class="tag gluten-free">✓ GF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="vegan gluten-free">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #8fbc8f 0%, #556b2f 100%);">
+                                <span>🥬</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Kale Caesar</h3>
+                                <span class="price">$9.50</span>
+                            </div>
+                            <p class="menu-item-description">Fresh kale, vegan cashew caesar dressing, nutritional yeast, garlic croutons</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegan">🌱 Vegan</span>
+                                <span class="tag gluten-free">✓ GF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Courses Section -->
+        <section id="mains" class="menu-section menu-section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Entrées</span>
+                    <h2 class="section-title">Main Courses</h2>
+                    <p class="section-subtitle">Served with seasonal vegetables</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item" data-tags="gluten-free">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #ffa07a 0%, #fa8072 100%);">
+                                <span>🐟</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Pan-Seared Salmon</h3>
+                                <span class="price">$18.95</span>
+                            </div>
+                            <p class="menu-item-description">Fresh salmon fillet pan-seared to perfection, served with roasted asparagus and lemon-dill sauce</p>
+                            <div class="menu-item-tags">
+                                <span class="tag gluten-free">✓ GF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #cd853f 0%, #8b4513 100%);">
+                                <span>🍗</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Herb-Crusted Chicken</h3>
+                                <span class="price">$16.50</span>
+                            </div>
+                            <p class="menu-item-description">Free-range chicken with rosemary-thyme crust, mashed potatoes, and pan gravy</p>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="vegan">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #dda0dd 0%, #8b008b 100%);">
+                                <span>🍆</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Eggplant Parmesan</h3>
+                                <span class="price">$15.00</span>
+                            </div>
+                            <p class="menu-item-description">Breaded eggplant with marinara, vegan mozzarella, and fresh basil over spaghetti</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegan">🌱 Vegan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts Section -->
+        <section id="desserts" class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Sweet Endings</span>
+                    <h2 class="section-title">Desserts</h2>
+                    <p class="section-subtitle">House-made daily</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item" data-tags="vegetarian">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #8b7355 0%, #6b5344 100%);">
+                                <span>🍫</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Chocolate Lava Cake</h3>
+                                <span class="price">$7.95</span>
+                            </div>
+                            <p class="menu-item-description">Warm molten chocolate cake with vanilla ice cream</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">🌿 Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-tags="vegetarian">
+                        <div class="menu-item-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #ffe4c4 0%, #deb887 100%);">
+                                <span>🍮</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Crème Brûlée</h3>
+                                <span class="price">$6.50</span>
+                            </div>
+                            <p class="menu-item-description">Classic vanilla custard with caramelized sugar crust</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">🌿 Vegetarian</span>
+                                <span class="tag gluten-free">✓ GF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section id="drinks" class="menu-section menu-section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Beverages</span>
+                    <h2 class="section-title">Drinks</h2>
+                    <p class="section-subtitle">Something for every occasion</p>
+                </div>
+
+                <!-- Coffee -->
+                <div class="drink-category">
+                    <h3 class="drink-title">☕ Coffee</h3>
+                    <div class="drink-list">
+                        <div class="drink-item">
+                            <span class="drink-name">Espresso</span>
+                            <span class="drink-price">$3.50</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Americano</span>
+                            <span class="drink-price">$4.00</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Cappuccino</span>
+                            <span class="drink-price">$4.50</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Latte</span>
+                            <span class="drink-price">$5.00</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Pour Over</span>
+                            <span class="drink-price">$4.75</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tea -->
+                <div class="drink-category">
+                    <h3 class="drink-title">🍵 Tea</h3>
+                    <div class="drink-list">
+                        <div class="drink-item">
+                            <span class="drink-name">Earl Grey</span>
+                            <span class="drink-price">$3.50</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Green Tea</span>
+                            <span class="drink-price">$3.50</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Chamomile</span>
+                            <span class="drink-price">$3.50</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Chai Latte</span>
+                            <span class="drink-price">$4.75</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialty Drinks -->
+                <div class="drink-category">
+                    <h3 class="drink-title">✨ Specialty</h3>
+                    <div class="drink-list">
+                        <div class="drink-item">
+                            <span class="drink-name">Golden Turmeric Latte</span>
+                            <span class="drink-price">$5.50</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Lavender Honey Latte</span>
+                            <span class="drink-price">$5.50</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Matcha Lemonade</span>
+                            <span class="drink-price">$5.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wine & Beer -->
+                <div class="drink-category">
+                    <h3 class="drink-title">🍷 Wine & Beer</h3>
+                    <div class="drink-list">
+                        <div class="drink-item">
+                            <span class="drink-name">House Red Wine (Glass)</span>
+                            <span class="drink-price">$9.00</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">House White Wine (Glass)</span>
+                            <span class="drink-price">$9.00</span>
+                        </div>
+                        <div class="drink-item">
+                            <span class="drink-name">Local Craft Beer</span>
+                            <span class="drink-price">$7.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta cta-compact">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Taste?</h2>
+                    <p>Reserve your table today.</p>
+                    <a href="reservations.html" class="btn btn-primary">Make a Reservation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">❖</span>
+                    <span class="logo-text">The Hearthstone</span>
+                    <p>Where Moments Are Made</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>123 Main Street<br>Downtown District<br>(555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Hearthstone Café & Bistro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
